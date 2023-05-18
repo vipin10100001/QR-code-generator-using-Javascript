@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0" />
+	<title>QR Code Generator using qrcode.js</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+	</script>
+</head>
+
+<body>
+	<header>
+		
+		<h1>Dynamic QR code generator using qrcode.js</h1><br><br>
+		<h5>Enter QR code content and generate QR</h5>
+        <br><br> <p>Dynamic QR code Generation: This is suitable when the content of the QR code is not available at the time of rending the page and depends on actions performed by the user which should lead to the generation of a QR code on the fly.</p>
+	</header>
+	<main>
+		<form action="/"
+			id="qr-generation-form">
+			<input type="text"
+				name="qr-code-content"
+				id="qr-content"
+				value=""
+				placeholder="Enter QR code content"
+				autocomplete="off" />
+			<input type="submit"
+				value="Generate QR Code" />
+		</form><br/>
+		<div id="qr-code"></div>
+	</main>
+</body>
+<script src="script.js"></script>
+
+</html>
